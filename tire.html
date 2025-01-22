@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Tire Showroom</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Vehicle Service Center</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="file.html">Home</a></li>
+                <li><a href="file.html">Services</a></li>
+                <li><a href="file.html">About Us</a></li>
+                <li><a href="file.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Our Tire Collection</h1>
+        <div class="tire-gallery">
+            <div class="tire-item">
+                <img src="Blaze.jpg" alt="Blaze Tire">
+                <h3>Blaze Tire</h3>
+                <h4>5000</h4>
+                <a href="apointment.html">Booking</a>
+                <p>Blaze Tire is the best quality of the Tire</p>
+            </div>
+            <div class="tire-item">
+                <img src="Mrf.png" alt=" Mrf Tire">
+                <h3>MRF Tire</h3>
+                <h4>5500</h4>
+                <a href="apointment.html">Booking</a>
+                <p>MRF it's speed and resnable price of tire</p>
+            </div>
+            <div class="tire-item">
+                <img src="ralco.jpg" alt="Ralco Tire">
+                <h3>Ralco Tire</h3>
+                <h4>6000</h4>
+                <a href="apointment.html">Booking</a>
+                <p>Ralco tire chale salo sal</p>
+            </div>
+            <div class="tire-item">
+                <img src="Reise.png" alt="Reise Tire">
+                <h3>Reise Tire</h3>
+                <h4>4500</h4>
+                <a href="apointment.html">Booking</a>
+                <p>Reaise tire for long time gerenty</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<style>
+    /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+header {
+    background: #cad4d4;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin-left: 20px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #333;
+}
+h4{
+    color: rgb(38, 160, 38);
+}
+h5{
+    color: rgb(155, 79, 243);
+}
+
+.tire-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tire-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.tire-item:hover {
+    transform: translateY(-10px);
+}
+
+.tire-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.tire-item h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tire-item p {
+    margin-top: 10px;
+    color: #666;
+}
+
+</style>

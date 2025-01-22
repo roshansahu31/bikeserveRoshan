@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Service Appointment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Schedule a Service Appointment</h2>
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="vehicle">Vehicle Make and Model</label>
+        <input type="text" id="vehicle" name="vehicle" placeholder="Enter your vehicle make and model" required>
+      </div>
+
+      <div class="form-group">
+        <label for="service-type">Service Type</label>
+        <select id="service-type" name="service_type" required>
+          <option value="oil-change">Oil Change</option>
+          <option value="tire-service">Tire Service</option>
+          <option value="brake-inspection">Brake Inspection</option>
+          <option value="battery-check">Battery Check</option>
+          <option value="general-repair">General Repair</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-date">Preferred Appointment Date</label>
+        <input type="date" id="appointment-date" name="appointment_date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="appointment-time">Preferred Appointment Time</label>
+        <input type="time" id="appointment-time" name="appointment_time" required>
+      </div>
+
+      <div class="form-group">
+        <a href="thank.html">Book Appointment</a>
+        </a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+<style>
+    /* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="date"],
+input[type="time"] {
+  cursor: pointer;
+}
+div a{
+    padding: 15px;
+  font-size: 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+</style>
